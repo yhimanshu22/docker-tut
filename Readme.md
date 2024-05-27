@@ -1,45 +1,66 @@
-# List all Docker images
+// List all Docker images
 docker images
 
-# Pull a Docker image
+// Pull a Docker image 
 docker pull <image_name>
 
-# Run a Docker container from an image
+// Run a Docker container from an image
 docker run -it <image_name>
 
-# List all running Docker containers
-docker ps
+// List all running Docker containers
+docker ps  
 
-# Stop a running Docker container
+// Stop a running Docker container
 docker stop <container_ID>
 
-# Start a stopped Docker container
+// Start a stopped Docker container
 docker start <container_ID>
 
-# Build a Docker image from a Dockerfile
+// Build a Docker image from a Dockerfile
 docker build -t <image_name> .
 
-# Inspect a Docker object (e.g., container, image, volume)
+// Inspect a Docker object (e.g., container, image, volume)
 docker inspect <object_name>
 
-# Login to Docker Hub
+// Login to Docker Hub
 docker login
 
-# Push a Docker image to a remote registry
+// Push a Docker image to a remote registry
 docker push <image_name>
 
-##Advanced docker commands
-# Execute a command in a running Docker container
+// Execute a command in a running Docker container 
 docker exec -it <container_ID> <command>
 
-# Copy files from the Docker host to a container
+// Copy files from the Docker host to a container
 docker cp <host_path> <container_ID>:<container_path>
 
-# Attach to an existing Docker container
+// Attach to an existing Docker container
 docker attach <container_ID>
 
-# Create a new Docker volume
+// Create a new Docker volume
 docker volume create <volume_name>
 
-# Search for Docker images on Docker Hub
+// Search for Docker images on Docker Hub
 docker search <image_name>
+
+// Base command for the Docker CLI
+docker
+
+// Subcommands for managing containers
+docker run
+docker stop 
+docker start
+docker ps
+
+// Subcommands for managing images 
+docker pull
+docker push
+docker images
+
+// Subcommands for managing volumes
+docker volume create
+docker volume rm
+
+// Subcommands for managing networks
+docker network create
+docker network rm
