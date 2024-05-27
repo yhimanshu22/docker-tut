@@ -1,13 +1,13 @@
-// List all Docker images
+# List all Docker images
 docker images
 
-// Pull a Docker image 
+# Pull a Docker image 
 docker pull <image_name>
 
-// Run a Docker container from an image
+# Run a Docker container from an image
 docker run -it <image_name>
 
-// List all running Docker containers
+# List all running Docker containers
 docker ps  
 
 // Stop a running Docker container
